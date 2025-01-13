@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <!-- Search section -->
+        <div id="search-section">
+            <input id="city-input" type="text" placeholder="Enter a City Name" />
+            <button id="search-btn">Search</button>
+            <button id="location-btn">Use Current Location</button>
+
+            <!-- Dropdown for recently searched cities -->
+            <select id="recent-searches">
+                <!-- Recently searched cities will be added here -->
+            </select>
+        </div>
+
+        <!-- Current weather section -->
+        <div id="current-weather" class="weather-info">
+            <h2 id="city-name">City Name</h2>
+            <p id="date">Date</p>
+            <p id="temp">Temperature: 0°C</p>
+            <p id="weather-icon">☀️</p>
+            <p id="wind">Wind Speed: 0 m/s</p>
+            <p id="humidity">Humidity: 0%</p>
+        </div>
+
+        <!-- 5-day forecast section -->
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-container" class="forecast-grid">
+                <!-- Forecast data will be dynamically injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file linked -->
+    <script src="App1.js"></script>
+</body>
+</html>
